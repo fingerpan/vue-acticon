@@ -1,0 +1,30 @@
+{
+  "name": "acticon",
+  "version": "1.0.0",
+  "description": "\u0016Pure CSS design of dynamic icon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fingerpan/acticon.git"
+  },
+  "keywords": [
+    "css",
+    "icon"
+  ],
+  "author": "youngpan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fingerpan/acticon/issues"
+  },
+  "homepage": "https://github.com/fingerpan/acticon#readme",
+  "devDependencies": {
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.3.0",
+    "gulp-make-css-url-version": "0.0.13",
+    "gulp-minify-css": "^1.2.4"
+  }
+}
