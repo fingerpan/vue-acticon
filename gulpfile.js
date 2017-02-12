@@ -11,8 +11,8 @@ gulp.task('clean',function(){
     del('./dist');
 })
 
-gulp.task('textless',function(){
-    gulp.src('./css/main.less')
+gulp.task('index',function(){
+    gulp.src('./less/main.less')
         .pipe(less())
         .pipe(cssver())
         .pipe(cssmin({
@@ -20,13 +20,12 @@ gulp.task('textless',function(){
             keepBreaks: true,
             keepSpecialComments: '*'
         }))
-        .pipe(gulp.dest('./dist/css'))
+        .pipe(gulp.dest('./dist/less'))
 });
 
 
-
 gulp.task('acticon',function(){
-    return gulp.src(['./css/_acticon/*/**.less','./css/_acticon/common.less'])
+    return gulp.src(['./less/_acticon/*/**.less','./less/_acticon/common.less'])
         .pipe(less())
         .pipe(gulp.dest('./dist/acticon'))
 })
