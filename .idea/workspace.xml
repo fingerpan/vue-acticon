@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ce64e5d6-1d5b-4e2c-9072-a65e8059a868" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/acticon_node_modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/css/_acticon/setting/setting.less" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dist/text.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_acticon/all.css" afterPath="$PROJECT_DIR$/css/_acticon/all.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_mixins/base.css" afterPath="$PROJECT_DIR$/css/_mixins/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_mixins/base.less" afterPath="$PROJECT_DIR$/css/_mixins/base.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_acticon/common.css" afterPath="$PROJECT_DIR$/css/_acticon/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_acticon/common.less" afterPath="$PROJECT_DIR$/css/_acticon/common.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_acticon/loading1/loading.css" afterPath="$PROJECT_DIR$/css/_acticon/loading1/loading.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_acticon/loading1/loading.less" afterPath="$PROJECT_DIR$/css/_acticon/loading1/loading.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/main.css" afterPath="$PROJECT_DIR$/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_mixins/mixins.css" afterPath="$PROJECT_DIR$/css/_mixins/mixins.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_mixins/mixins.less" afterPath="$PROJECT_DIR$/css/_mixins/mixins.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_acticon/musicline/musicline.css" afterPath="$PROJECT_DIR$/css/_acticon/musicline/musicline.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/_acticon/musicline/musicline.less" afterPath="$PROJECT_DIR$/css/_acticon/musicline/musicline.less" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="acticon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -349,7 +332,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1376" height="754" extended-state="7" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2492647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
