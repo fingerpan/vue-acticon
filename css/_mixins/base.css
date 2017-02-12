@@ -1,5 +1,18 @@
+.iconbg {
+  background-color: #999;
+}
 .flex-around {
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+}
+.setcenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }

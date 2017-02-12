@@ -1,0 +1,109 @@
+b,
+i {
+  display: block;
+  font-style: normal;
+}
+b {
+  width: 40px;
+  height: 40px;
+}
+/*
+<b class="setting">
+        <b>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+        </b>
+</b>
+*/
+b.setting {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+b.setting::before,
+b.setting::after {
+  content: "";
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+b.setting::before {
+  width: 75%;
+  height: 75%;
+  background-color: #999;
+}
+b.setting::after {
+  width: 40%;
+  height: 40%;
+  background-color: #fff;
+}
+b.setting > b {
+  position: relative;
+  width: 20%;
+  height: 100%;
+  -webkit-animation: rotating 4s infinite linear;
+  -o-animation: rotating 4s infinite linear;
+  animation: rotating 4s infinite linear;
+}
+b.setting > b i {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-origin: center center;
+  -moz-transform-origin: center center;
+  -ms-transform-origin: center center;
+  -o-transform-origin: center center;
+  transform-origin: center center;
+  border-radius: 2px;
+  background-color: #999;
+}
+b.setting > b i:nth-child(0) {
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+b.setting > b i:nth-child(1) {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+b.setting > b i:nth-child(2) {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+b.setting > b i:nth-child(3) {
+  -webkit-transform: rotate(135deg);
+  -moz-transform: rotate(135deg);
+  -ms-transform: rotate(135deg);
+  -o-transform: rotate(135deg);
+  transform: rotate(135deg);
+}
+@keyframes rotating {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

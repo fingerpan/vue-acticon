@@ -1,7 +1,11 @@
-.flex-around {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-end;
+b,
+i {
+  display: block;
+  font-style: normal;
+}
+b {
+  width: 40px;
+  height: 40px;
 }
 /* layout :
  <b class="music">
@@ -105,6 +109,15 @@ b.music i:nth-child(5) {
     transform: scale(1, 0.3);
   }
 }
+/*
+   <b class="loading">
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+  </b>
+*/
 b.loading {
   box-sizing: border-box;
   display: flex;

@@ -1,17 +1,22 @@
 
 
-
+@import "compatible";
+@import (reference) "../_variables/base";
 //
 //------------------------
 
-.iconbg(){
+.iconbg{
   background-color:@grey-dark;
 }
 
 
-
 .borderRadius(@rule){
   border-radius:@rule;
+}
+
+.setWH(@w,@h:@w){
+  width: @w;
+  height: @h;
 }
 
 .flex-around{
@@ -19,3 +24,34 @@
   justify-content: space-around;
   align-items: flex-end;
 }
+
+
+.setcenter{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  .transform(translate(-50%, -50%));
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
