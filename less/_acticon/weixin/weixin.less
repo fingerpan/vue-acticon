@@ -1,0 +1,124 @@
+
+
+
+
+
+
+@import "../../_mixins/mixins";
+@import "../common";
+
+//   weixin icon html
+/*
+      <b class="weixin">
+          <b class="weixin-box">
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+              <i></i>
+          </b>
+      </b>
+*/
+
+
+//  ------------------------------------------
+
+
+b.weixin{
+  box-sizing: border-box;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border: 1px solid rgb(153, 153, 153);
+  border-radius: 50%;
+  position: relative;
+
+  animation: weixin 5s linear infinite;
+
+  b.weixin-box{
+    box-sizing: border-box;
+    border-radius: 50%;
+
+    width: 40%;
+    height: 40%;
+    border: 1px solid rgb(153, 153, 153);
+    .setcenter();
+
+    i{
+      width: 1px;
+      height: 21px;
+      background-color: rgb(153, 153, 153);
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -0.5px;
+      //margin-top: -0.5px;
+
+      transform-origin: top center;
+    }
+    i:nth-child(1){
+      transform: rotate(45deg) translate(-7px,-3px);
+    }
+    i:nth-child(2){
+      transform: rotate(90deg) translate(-7px,-3px);
+    }
+    i:nth-child(3){
+      transform: rotate(135deg) translate(-7px,-3px);
+    }
+    i:nth-child(4){
+      transform: rotate(180deg) translate(-7px,-3px);
+    }
+    i:nth-child(5){
+      transform: rotate(225deg) translate(-7px,-3px);
+    }
+    i:nth-child(6){
+      transform: rotate(270deg) translate(-7px,-3px);
+    }
+    i:nth-child(7){
+      transform: rotate(315deg) translate(-7px,-3px);
+    }
+    i:nth-child(8){
+      transform: rotate(360deg) translate(-7px,-3px);
+    }
+  }
+
+
+
+
+
+}
+
+@keyframes weixin {
+  0%{
+    transform: rotate(0deg);
+  }
+  100%{
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
