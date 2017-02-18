@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/fingerpan/acticon#readme",
   "devDependencies": {
+    "browser-sync": "^2.18.8",
     "del": "^2.2.2",
     "gulp": "^3.9.1",
     "gulp-less": "^3.3.0",

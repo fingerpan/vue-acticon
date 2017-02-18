@@ -55,9 +55,9 @@ b.setting > b {
   position: relative;
   width: 20%;
   height: 100%;
-  -webkit-animation: go 4s infinite linear;
-  -o-animation: go 4s infinite linear;
-  animation: go 4s infinite linear;
+  -webkit-animation: rotating 4s infinite linear;
+  -o-animation: rotating 4s infinite linear;
+  animation: rotating 4s infinite linear;
 }
 b.setting > b i {
   position: absolute;
@@ -99,7 +99,7 @@ b.setting > b i:nth-child(3) {
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
 }
-@keyframes go {
+@keyframes rotating {
   0% {
     transform: rotate(0deg);
   }

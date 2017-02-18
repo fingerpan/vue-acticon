@@ -1,0 +1,83 @@
+b,
+i {
+  display: block;
+  font-style: normal;
+}
+b {
+  width: 40px;
+  height: 40px;
+}
+/*
+<b class="wifi">
+      <b>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+      </b>
+</b>
+
+*/
+b.wifi {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+b.wifi > b {
+  width: 25%;
+  height: 25%;
+  position: relative;
+}
+b.wifi > b i {
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 3px solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-color: #999 transparent transparent transparent;
+}
+b.wifi > b i:nth-child(4) {
+  width: 60%;
+  height: 60%;
+  opacity: 1;
+  background-color: #999999;
+  transform: translate(-50%, -100%);
+}
+@keyframes wifi1 {
+  66.6% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes wifi2 {
+  33.3% {
+    opacity: 0;
+  }
+  66.6% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes wifi3 {
+  0% {
+    opacity: 0;
+  }
+  33.3% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
