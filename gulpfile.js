@@ -10,6 +10,7 @@ var browserSync = require('browser-sync').create();
 // 清空文件夹。
 gulp.task('clean',function(){
     del('./dist');
+    del('./style/css');
 })
 
 //将主文件配置。
@@ -22,7 +23,7 @@ gulp.task('index',function(){
             keepBreaks: true,
             keepSpecialComments: '*'
         }))
-        .pipe(gulp.dest('./dist/less'))
+        .pipe(gulp.dest('./style/css'))
 });
 
 // 生成每一个图标实例的css。

@@ -5,27 +5,31 @@
 //
 //------------------------
 
-.iconbg{
-  background-color:@grey-dark;
+.setWH(@w,@h:@w){
+  width: @w;
+  height: @h;
 }
 
 
 .borderRadius(@rule){
   border-radius:@rule;
 }
+
 .circle(){
   border-radius: 50%;
 }
 
-.setWH(@w,@h:@w){
-  width: @w;
-  height: @h;
-}
+// the flex
 
 .flex-around-end{
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
+}
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 

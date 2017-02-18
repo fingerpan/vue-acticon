@@ -1,0 +1,65 @@
+.iconbg {
+  background-color: #999;
+}
+b,
+i {
+  display: block;
+  font-style: normal;
+}
+b {
+  width: 30px;
+  height: 30px;
+}
+/*
+        <b class="ripples">
+                <i></i>
+                <i></i>
+                <i></i>
+        </b>
+*/
+b.ripples {
+  position: relative;
+}
+b.ripples > i {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #999;
+  position: absolute;
+  opacity: 0;
+  -webkit-animation: ripples 1.5s linear infinite;
+  -o-animation: ripples 1.5s linear infinite;
+  animation: ripples 1.5s linear infinite;
+}
+b.ripples > i:nth-child(1) {
+  -webkit-animation-delay: 0s;
+  -moz-animation-delay: 0s;
+  -o-animation-delay: 0s;
+  animation-delay: 0s;
+}
+b.ripples > i:nth-child(2) {
+  -webkit-animation-delay: 0.2s;
+  -moz-animation-delay: 0.2s;
+  -o-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+b.ripples > i:nth-child(3) {
+  -webkit-animation-delay: 0.4s;
+  -moz-animation-delay: 0.4s;
+  -o-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+@keyframes ripples {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(0.3);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 0;
+  }
+}

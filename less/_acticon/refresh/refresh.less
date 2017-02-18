@@ -1,10 +1,11 @@
 
 
 
-
 @import "../../_mixins/mixins";
 @import "../common";
 
+
+// refresh icon
 /*
 <b class="refresh">
     <b>
@@ -21,80 +22,65 @@
  */
 
 
-
-
 b.refresh {
-  width: 40px;
-  height: 40px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  b {
-    width: 25%;
-    height: 25%;
-    border-radius: 50%;
-    display: block;
+
+  .flex-center();
+
+  > b {
     position: relative;
 
-    i {
+    .setWH(25%);
+    .circle();
+
+
+    // ------------------------
+    > i {
       position: absolute;
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background-color: rgb(153, 153, 153);
       opacity: 0;
-      :nth-child(1) {
-        transform: translate(150%);
-        animation: refresh 1s infinite 0.12s linear;
+
+      .setWH(100%);
+      .circle();
+      .iconbg();
+
+      // bulid child  -------------
+      .setchild(@n,@i:1) when (@i <= @n) {
+        &:nth-child(@{i}) {
+         .animation(refresh 1s infinite unit(0.12*@i,s) linear)
+        }
+        .setchild(@n, @i+1)
       }
 
-      :nth-child(2) {
-        transform: translate(110%, 110%);
-        animation: refresh 1s infinite 0.24s linear;
-      }
+      .setchild(8);
 
-      b.refresh i:nth-child(3) {
-        transform: translate(0, 150%);
-        animation: refresh 1s infinite 0.36s linear;
+      //  set transform   -----------
+      &:nth-child(1) {
+        .transform(translate(150%));
       }
-
-      b.refresh i:nth-child(4) {
-        transform: translate(-110%, 110%);
-        animation: refresh 1s infinite 0.48s linear;
+      &:nth-child(2) {
+        .transform(translate(110%, 110%));
       }
-
-      b.refresh i:nth-child(5) {
-        transform: translate(-150%);
-        animation: refresh 1s infinite 0.6s linear;
+      &:nth-child(3) {
+        .transform(translate(0, 150%));
       }
-
-      b.refresh i:nth-child(6) {
-        transform: translate(-110%, -110%);
-        animation: refresh 1s infinite 0.72s linear;
+      &:nth-child(4) {
+        .transform(translate(-110%, 110%));
       }
-
-      b.refresh i:nth-child(7) {
-        transform: translate(0, -150%);
-        animation: refresh 1s infinite 0.84s linear;
+      &:nth-child(5) {
+        .transform(translate(-150%));
       }
-
-      b.refresh i:nth-child(8) {
-        transform: translate(110%, -110%);
-        animation: refresh 1s infinite 0.96s linear;
+      &:nth-child(6) {
+        .transform(translate(-110%, -110%));
       }
-
+      &:nth-child(7) {
+        .transform(translate(0, -150%));
+      }
+      &:nth-child(8) {
+        .transform(translate(110%, -110%));
+      }
     }
-
-
-
   }
 
-
-
-
 }
-
-
 
 @keyframes refresh {
   0% {

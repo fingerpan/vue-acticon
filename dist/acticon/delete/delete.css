@@ -1,0 +1,79 @@
+.iconbg {
+  background-color: #999;
+}
+b,
+i {
+  display: block;
+  font-style: normal;
+}
+b {
+  width: 30px;
+  height: 30px;
+}
+/*
+    <b class="delete">
+          <i></i>
+          <i></i>
+    </b>
+ */
+b.delete > i:nth-child(1) {
+  width: 80%;
+  height: 2px;
+  background-color: #999999;
+  margin: 0 auto;
+  transform-origin: -10px center;
+  transition: all 1s;
+  -webkit-animation: updown 3s ease infinite;
+  -o-animation: updown 3s ease infinite;
+  animation: updown 3s ease infinite;
+}
+b.delete > i:nth-child(1)::before {
+  content: "";
+  width: 25%;
+  height: 3px;
+  border-radius: 3px;
+  border: 2px solid #999999;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%);
+}
+b.delete > i:nth-child(2) {
+  position: absolute;
+  width: 55%;
+  height: 65%;
+  box-sizing: border-box;
+  border: 2px solid #999999;
+  border-top: transparent;
+  position: relative;
+  border-radius: 0 0 5px 5px;
+}
+b.delete > i:nth-child(2)::before,
+b.delete > i:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 30%;
+  top: 5px;
+  background-color: #999999;
+}
+b.delete > i:nth-child(2)::before {
+  left: 10%;
+}
+b.delete > i:nth-child(2)::after {
+  left: 10%;
+}
+@keyframes updown {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-15deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

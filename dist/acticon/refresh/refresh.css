@@ -1,0 +1,152 @@
+.iconbg {
+  background-color: #999;
+}
+b,
+i {
+  display: block;
+  font-style: normal;
+}
+b {
+  width: 30px;
+  height: 30px;
+}
+/*
+<b class="refresh">
+    <b>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+        <i></i>
+    </b>
+</b>
+ */
+b.refresh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+b.refresh > b {
+  position: relative;
+  width: 25%;
+  height: 25%;
+  border-radius: 50%;
+}
+b.refresh > b > i {
+  position: absolute;
+  opacity: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #999;
+}
+b.refresh > b > i:nth-child(1) {
+  -webkit-animation: refresh 1s infinite 0.12s linear;
+  -o-animation: refresh 1s infinite 0.12s linear;
+  animation: refresh 1s infinite 0.12s linear;
+}
+b.refresh > b > i:nth-child(2) {
+  -webkit-animation: refresh 1s infinite 0.24s linear;
+  -o-animation: refresh 1s infinite 0.24s linear;
+  animation: refresh 1s infinite 0.24s linear;
+}
+b.refresh > b > i:nth-child(3) {
+  -webkit-animation: refresh 1s infinite 0.36s linear;
+  -o-animation: refresh 1s infinite 0.36s linear;
+  animation: refresh 1s infinite 0.36s linear;
+}
+b.refresh > b > i:nth-child(4) {
+  -webkit-animation: refresh 1s infinite 0.48s linear;
+  -o-animation: refresh 1s infinite 0.48s linear;
+  animation: refresh 1s infinite 0.48s linear;
+}
+b.refresh > b > i:nth-child(5) {
+  -webkit-animation: refresh 1s infinite 0.6s linear;
+  -o-animation: refresh 1s infinite 0.6s linear;
+  animation: refresh 1s infinite 0.6s linear;
+}
+b.refresh > b > i:nth-child(6) {
+  -webkit-animation: refresh 1s infinite 0.72s linear;
+  -o-animation: refresh 1s infinite 0.72s linear;
+  animation: refresh 1s infinite 0.72s linear;
+}
+b.refresh > b > i:nth-child(7) {
+  -webkit-animation: refresh 1s infinite 0.84s linear;
+  -o-animation: refresh 1s infinite 0.84s linear;
+  animation: refresh 1s infinite 0.84s linear;
+}
+b.refresh > b > i:nth-child(8) {
+  -webkit-animation: refresh 1s infinite 0.96s linear;
+  -o-animation: refresh 1s infinite 0.96s linear;
+  animation: refresh 1s infinite 0.96s linear;
+}
+b.refresh > b > i:nth-child(1) {
+  -webkit-transform: translate(150%);
+  -moz-transform: translate(150%);
+  -ms-transform: translate(150%);
+  -o-transform: translate(150%);
+  transform: translate(150%);
+}
+b.refresh > b > i:nth-child(2) {
+  -webkit-transform: translate(110%, 110%);
+  -moz-transform: translate(110%, 110%);
+  -ms-transform: translate(110%, 110%);
+  -o-transform: translate(110%, 110%);
+  transform: translate(110%, 110%);
+}
+b.refresh > b > i:nth-child(3) {
+  -webkit-transform: translate(0, 150%);
+  -moz-transform: translate(0, 150%);
+  -ms-transform: translate(0, 150%);
+  -o-transform: translate(0, 150%);
+  transform: translate(0, 150%);
+}
+b.refresh > b > i:nth-child(4) {
+  -webkit-transform: translate(-110%, 110%);
+  -moz-transform: translate(-110%, 110%);
+  -ms-transform: translate(-110%, 110%);
+  -o-transform: translate(-110%, 110%);
+  transform: translate(-110%, 110%);
+}
+b.refresh > b > i:nth-child(5) {
+  -webkit-transform: translate(-150%);
+  -moz-transform: translate(-150%);
+  -ms-transform: translate(-150%);
+  -o-transform: translate(-150%);
+  transform: translate(-150%);
+}
+b.refresh > b > i:nth-child(6) {
+  -webkit-transform: translate(-110%, -110%);
+  -moz-transform: translate(-110%, -110%);
+  -ms-transform: translate(-110%, -110%);
+  -o-transform: translate(-110%, -110%);
+  transform: translate(-110%, -110%);
+}
+b.refresh > b > i:nth-child(7) {
+  -webkit-transform: translate(0, -150%);
+  -moz-transform: translate(0, -150%);
+  -ms-transform: translate(0, -150%);
+  -o-transform: translate(0, -150%);
+  transform: translate(0, -150%);
+}
+b.refresh > b > i:nth-child(8) {
+  -webkit-transform: translate(110%, -110%);
+  -moz-transform: translate(110%, -110%);
+  -ms-transform: translate(110%, -110%);
+  -o-transform: translate(110%, -110%);
+  transform: translate(110%, -110%);
+}
+@keyframes refresh {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

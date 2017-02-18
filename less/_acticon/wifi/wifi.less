@@ -14,67 +14,69 @@
 */
 
 b.wifi {
-  //position: relative;
-  .setWH(40px);
+
+  position: relative;
   .flex-around-end;
+
+
   > b {
-        .setWH(25%);
-        //width: 25%;
-        //height: 25%;
-        position: relative;
-        i {
-          //display: block;
-          box-sizing: border-box;
-          .circle();
-          //border-radius: 50%;
-          border: 3px solid;
-          //position: absolute;
-          //left: 50%;
-          //top: 50%;
-          //transform: translate(-50%,-50%);
-          .setcenter();
-          border-color: @grey-dark transparent transparent transparent;
-          //opacity: 0;
+    .setWH(25%);
+    position: relative;
+
+
+    i {
+
+      box-sizing: border-box;
+      border:3px solid;
+      border-color: @grey-dark transparent transparent transparent;
+      opacity: 0;
+      .circle();
+      .setcenter();
+
+      //  bulid child ----------------------
+      .setchild(@n,@i:1) when (@i <= @n) {
+        @num: 750 - @i*150;
+        &:nth-child(@{i}) {
+          // set the width
+          .setWH(unit(@num, %));
         }
+        .setchild(@n, @i+1)
+      }
 
-        //  bulid child ----------------------
+      .setchild(3);
 
-        .setChild(@n,@i:1) when(@i<=@n){
-          &:nth-child(@{i}){
-            //@num = 750 - @i*150;
-            ////.setWH(@num%);
-            //.setWh(unit(@num,%));
-            .animation(wifi1 2s infinite)
-          }
-          .setChlid(@n,@i+1);
-        };
-        //.setChild(3);
+      // set the animation   ---------------
+      &:nth-child(1) {
+        .animation(wifi1 2s infinite)
+      }
+      &:nth-child(2) {
+        .animation(wifi2 2s infinite)
+      }
+      &:nth-child(3) {
+        .animation(wifi3 2s infinite)
+      }
+      &:nth-child(4) {
 
-        //i:nth-child(1) {
-        //  width: 600%;
-        //  height: 600%;
-        //  animation: wifi1 2s infinite;
-        //}
-        //i:nth-child(2) {
-        //  width: 450%;
-        //  height: 450%;
-        //  animation: wifi2 2s infinite;
-        //}
-        //i:nth-child(3) {
-        //  width: 300%;
-        //  height: 300%;
-        //  animation: wifi3 2s infinite;
-        //}
-        i:nth-child(4) {
-          width: 60%;
-          height: 60%;
-          opacity: 1;
-          background-color: rgb(153, 153, 153);
-          transform: translate(-50%, -100%);
-        }
+        opacity: 1;
+
+        .iconbg;
+        .transform(translate(-50%, -100%));
+
+        //  Calculation border width => because border-width can not set Percent unit
+        @borderW : unit(@iconWH)*0.05;
+        //  seil the border width number
+        border-width: unit(ceil(@borderW),px);
+
+      }
+
+    }
+
   }
 
 }
+
+
+//  the  animate  function
 
 @keyframes wifi1 {
   66.6% {

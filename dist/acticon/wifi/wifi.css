@@ -1,11 +1,14 @@
+.iconbg {
+  background-color: #999;
+}
 b,
 i {
   display: block;
   font-style: normal;
 }
 b {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 /*
 <b class="wifi">
@@ -19,8 +22,7 @@ b {
 
 */
 b.wifi {
-  width: 40px;
-  height: 40px;
+  position: relative;
   display: flex;
   justify-content: space-around;
   align-items: flex-end;
@@ -32,8 +34,10 @@ b.wifi > b {
 }
 b.wifi > b i {
   box-sizing: border-box;
-  border-radius: 50%;
   border: 3px solid;
+  border-color: #999 transparent transparent transparent;
+  opacity: 0;
+  border-radius: 50%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,14 +46,43 @@ b.wifi > b i {
   -ms-transform: translate(-50%, -50%);
   -o-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  border-color: #999 transparent transparent transparent;
+}
+b.wifi > b i:nth-child(1) {
+  width: 600%;
+  height: 600%;
+}
+b.wifi > b i:nth-child(2) {
+  width: 450%;
+  height: 450%;
+}
+b.wifi > b i:nth-child(3) {
+  width: 300%;
+  height: 300%;
+}
+b.wifi > b i:nth-child(1) {
+  -webkit-animation: wifi1 2s infinite;
+  -o-animation: wifi1 2s infinite;
+  animation: wifi1 2s infinite;
+}
+b.wifi > b i:nth-child(2) {
+  -webkit-animation: wifi2 2s infinite;
+  -o-animation: wifi2 2s infinite;
+  animation: wifi2 2s infinite;
+}
+b.wifi > b i:nth-child(3) {
+  -webkit-animation: wifi3 2s infinite;
+  -o-animation: wifi3 2s infinite;
+  animation: wifi3 2s infinite;
 }
 b.wifi > b i:nth-child(4) {
-  width: 60%;
-  height: 60%;
   opacity: 1;
-  background-color: #999999;
+  background-color: #999;
+  -webkit-transform: translate(-50%, -100%);
+  -moz-transform: translate(-50%, -100%);
+  -ms-transform: translate(-50%, -100%);
+  -o-transform: translate(-50%, -100%);
   transform: translate(-50%, -100%);
+  border-width: 2px;
 }
 @keyframes wifi1 {
   66.6% {
