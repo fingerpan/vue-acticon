@@ -39,26 +39,19 @@ b.wifi {
         &:nth-child(@{i}) {
           // set the width
           .setWH(unit(@num, %));
+
+          @str : e('wifi@{i}');
+
+          .animation( @str 2s infinite);
         }
-        .setchild(@n, @i+1)
+        .setchild(@n, @i+1);
       }
 
       .setchild(3);
 
-      // set the animation   ---------------
-      &:nth-child(1) {
-        .animation(wifi1 2s infinite)
-      }
-      &:nth-child(2) {
-        .animation(wifi2 2s infinite)
-      }
-      &:nth-child(3) {
-        .animation(wifi3 2s infinite)
-      }
       &:nth-child(4) {
 
         opacity: 1;
-
         .iconbg;
         .transform(translate(-50%, -100%));
 

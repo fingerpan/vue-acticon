@@ -1,0 +1,21 @@
+{
+  "name": "acticon",
+  "description": "\u0016Pure CSS design of dynamic icon",
+  "main": "index.js",
+  "authors": [
+    "youngpan"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "css",
+    "icon"
+  ],
+  "homepage": "https://github.com/fingerpan/Acticon",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

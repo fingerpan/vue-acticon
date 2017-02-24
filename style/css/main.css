@@ -1,15 +1,16 @@
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 img,legend{border:0}
 legend,td,th{padding:0}
-article,aside,b,details,figcaption,figure,footer,header,i,main,menu,nav,section,summary{display:block}
+.acticon_top,.head,.layout li{text-align:center}
+.acticon_top .contribute:focus,a:active,a:hover{outline:0}
 b.setting,sub,sup{position:relative}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
 body{margin:0}
+article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}
 audio,canvas,progress,video{display:inline-block;vertical-align:baseline}
 audio:not([controls]){display:none;height:0}
 [hidden],template{display:none}
 a{background-color:transparent}
-a:active,a:hover{outline:0}
 abbr[title]{border-bottom:1px dotted}
 b,optgroup,strong{font-weight:700}
 dfn{font-style:italic}
@@ -31,15 +32,43 @@ button,html input[type=button],input[type=reset],input[type=submit]{-webkit-appe
 button[disabled],html input[disabled]{cursor:default}
 button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}
 input{line-height:normal}
+.github,.github .star{color:#333;text-shadow:0 1px 0 #fff;line-height:14px;display:inline-block;text-decoration:none}
 input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0}
 input[type=number]::-webkit-inner-spin-button,input[type=number]::-webkit-outer-spin-button{height:auto}
 input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}
-b.loading,b.photo,b.photo::before,b.wifi>b i{box-sizing:border-box}
+.acticon_top,.github,.head,.layout,.layout li,b.loading,b.photo,b.photo::before,b.wifi>b i{box-sizing:border-box}
 input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none}
 fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}
 table{border-collapse:collapse;border-spacing:0}
+.github{margin-left:5px;background-color:#eee;border:1px solid #d5d5d5;padding:2px 5px 2px 4px;white-space:nowrap;cursor:pointer;border-radius:3px;background-image:linear-gradient(to bottom,#fcfcfc 0,#eee 100%);height:20px}
+.github .github_icon{display:inline-block;width:14px;height:14px;margin-right:4px;background-image:url(../../style/font/timg.png?v=2017-02-24);background-size:100% 100%;background-repeat:no-repeat}
+.github .star{font-size:14px;font-weight:700;vertical-align:top}
+.github:hover{background-image:linear-gradient(to bottom,#eee 0,#ddd 100%)}
+body{font-family:"Microsoft YaHei UI Light"}
+.layout{list-style:none;width:750px;margin:10px auto 0;border:1px solid #2bb48a;display:flex;justify-content:space-around;flex-wrap:wrap;padding:0}
+.layout li{width:100px;height:105px;margin:15px 12px;border:1px solid #CCC}
+.layout li>div{display:flex;width:40px;height:40px;border:1px solid transparent;margin:25% auto 0;justify-content:center;align-items:center}
+.layout li:hover{border-color:#2f9842;cursor:pointer}
+.layout li>h4{font-size:14px;font-weight:400;color:#666;line-height:150%;margin-top:5%}
+.head{width:100%;height:130px;border-bottom:1px solid #CCC;padding-top:30px}
+.head>h1{font-size:100px;color:#2bb48a;font-weight:400;margin:0;line-height:100px;vertical-align:baseline}
+.acticon_top{width:600px;margin:0 auto;padding:20px 10px}
+.acticon_top .acticon__title{font-size:18px;font-weight:400;color:#555;margin-top:2px}
+.acticon_top .actico__desc{font-size:13px;font-weight:400;color:#2bb48a}
+.acticon_top .acticon__anthor{margin:10px 0;font-size:16px;color:#2bb48a;font-weight:400}
+.acticon_top .acticon__anthor a{text-decoration:none;color:#2bb48a}
+.acticon_top .acticon__anthor a:hover{color:#87daff}
+.acticon_top .contribute{cursor:pointer;display:inline-block;line-height:50px;width:120px;height:50px;background-color:#fff;border:1px solid #2bb48a;font-size:14px;color:#2bb48a;margin:20px 0 0}
+.acticon_top .contribute:hover{outline:#87daff solid 1px}
+@media screen and (max-width:740px){.acticon_top,.layout{width:100%}
+body{margin:0 10px}
+.head{height:100px}
+.head>h1{font-size:50px;color:#2bb48a;font-weight:400;margin:0;line-height:50px;vertical-align:baseline}
+.layout{margin:0;padding:0}
+.layout>li{width:25%;height:30%}
+}
 .iconbg{background-color:#999}
-b,i{font-style:normal}
+b,i{display:block;font-style:normal}
 b.loading,b.music,b.refresh,b.setting,b.wifi{display:flex}
 b{width:30px;height:30px}
 b.loading>i,b.music i{width:10%;height:80%;background-color:#999}

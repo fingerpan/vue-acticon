@@ -7,6 +7,8 @@ var cssver = require('gulp-make-css-url-version');
 var del = require('del');
 var browserSync = require('browser-sync').create();
 
+var base64 = require('gulp-base64');
+
 // 清空文件夹。
 gulp.task('clean',function(){
     del('./dist');
@@ -17,6 +19,7 @@ gulp.task('clean',function(){
 gulp.task('index',function(){
     gulp.src('./less/main.less')
         .pipe(less())
+        .pipe(base64())
         .pipe(cssver())
         .pipe(cssmin({
             advanced: true,
