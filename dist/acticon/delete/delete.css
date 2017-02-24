@@ -1,0 +1,88 @@
+.iconbg {
+  background-color: #999;
+}
+b,
+i {
+  display: block;
+  font-style: normal;
+}
+b {
+  width: 30px;
+  height: 30px;
+}
+/*
+    <b class="delete">
+          <i></i>
+          <i></i>
+    </b>
+ */
+b.delete > i {
+  background-color: #999;
+}
+b.delete > i:nth-child(1) {
+  margin: 5px auto 1px;
+  width: 80%;
+  height: 2px;
+  -webkit-animation: updown 3s ease infinite;
+  -o-animation: updown 3s ease infinite;
+  animation: updown 3s ease infinite;
+  -webkit-transform-origin: -10px center;
+  -moz-transform-origin: -10px center;
+  -ms-transform-origin: -10px center;
+  -o-transform-origin: -10px center;
+  transform-origin: -10px center;
+}
+b.delete > i:nth-child(1)::before {
+  content: "";
+  width: 25%;
+  height: 3px;
+  border-radius: 3px;
+  border: 2px solid #999;
+  position: absolute;
+  top: -5px;
+  -webkit-transform: translate(-50%);
+  -moz-transform: translate(-50%);
+  -ms-transform: translate(-50%);
+  -o-transform: translate(-50%);
+  transform: translate(-50%);
+}
+b.delete > i:nth-child(2) {
+  position: relative;
+  width: 60%;
+  height: 70%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 2px solid #999;
+  border-top: transparent;
+  border-radius: 0 0 5px 5px;
+}
+b.delete > i:nth-child(2)::before,
+b.delete > i:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 40%;
+  top: 5px;
+  background-color: #999;
+}
+b.delete > i:nth-child(2)::before {
+  left: 15%;
+}
+b.delete > i:nth-child(2)::after {
+  right: 15%;
+}
+@keyframes updown {
+  0% {
+    transform: rotate(0deg);
+  }
+  30% {
+    transform: rotate(-15deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}

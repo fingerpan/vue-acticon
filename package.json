@@ -2,7 +2,6 @@
   "name": "acticon",
   "version": "1.0.0",
   "description": "\u0016Pure CSS design of dynamic icon",
-  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,7 +14,7 @@
     "icon"
   ],
   "author": "youngpan",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/fingerpan/acticon/issues"
   },

@@ -26,10 +26,6 @@ gulp.task('index',function(){
             keepBreaks: true,
             keepSpecialComments: '*'
         }))
-        // .pipe(autoprefixer({
-        //     browsers: ['last 2 versions'],
-        //     cascade: false
-        // }))
         .pipe(gulp.dest('./style/css'))
 });
 

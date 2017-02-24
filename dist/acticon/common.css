@@ -1,0 +1,12 @@
+.iconbg {
+  background-color: #999;
+}
+b,
+i {
+  display: block;
+  font-style: normal;
+}
+b {
+  width: 30px;
+  height: 30px;
+}
