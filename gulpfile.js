@@ -8,6 +8,7 @@ var del = require('del');
 var browserSync = require('browser-sync').create();
 
 var base64 = require('gulp-base64');
+var autoprefixer = require('gulp-autoprefixer');
 
 // 清空文件夹。
 gulp.task('clean',function(){
@@ -20,12 +21,15 @@ gulp.task('index',function(){
     gulp.src('./less/main.less')
         .pipe(less())
         .pipe(base64())
-        .pipe(cssver())
         .pipe(cssmin({
             advanced: true,
             keepBreaks: true,
             keepSpecialComments: '*'
         }))
+        // .pipe(autoprefixer({
+        //     browsers: ['last 2 versions'],
+        //     cascade: false
+        // }))
         .pipe(gulp.dest('./style/css'))
 });
 
