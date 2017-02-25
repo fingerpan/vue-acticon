@@ -1,21 +1,21 @@
-# [Acticon](http://www.acticon.top)
-Pure CSS design of dynamic icon
+# acticon
 
-> Acticon is merged  form 'action' and 'icon',you can use it when you want to add some highlights for your site,because animated things always attract others'
------------------------------------------------------------------------
+> A Vue.js project
 
-### CONTRIBUTE(贡献)
+## Build Setup
 
-个人的力量是有限的，如果你有好的想法，欢迎你加入我这个项目。`E-mail(youngpan2014@outlook.com)`;
+``` bash
+# install dependencies
+npm install
 
+# serve with hot reload at localhost:8080
+npm run dev
 
-### 使用
+# build for production with minification
+npm run build
 
+# build for production and view the bundle analyzer report
+npm run build --report
 ```
-dist文件夹中有每一个图标css样式文件。
 
-```
-
-
-
-
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
