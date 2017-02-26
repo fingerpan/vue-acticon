@@ -30,9 +30,7 @@
 <style lang="less" rel="stylesheet/less">
 
 
-    @import "../../common/less/base";
     @import "../../common/less/mixins";
-    @import "../../common/less/var";
     @import "../../common/less/compatiable";
 
 

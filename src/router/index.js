@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import layout from 'components/layout/layout-box.vue'
+import layout from 'components/layout/acticon-box.vue'
 
 Vue.use(Router)
 

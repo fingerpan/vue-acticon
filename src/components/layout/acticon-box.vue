@@ -4,31 +4,28 @@
 <template>
 
   <ul class="clearfix layout">
+
+    <!--misicline-->
     <li>
       <div id="music">
         <musicline></musicline>
       </div>
       <h4>musicline</h4>
     </li>
+    <!--loadline-->
     <li>
       <div id="loading">
         <loadline></loadline>
       </div>
       <h4>Loading</h4>
     </li>
+    <!--jumpline-->
     <li>
-      <div id="spiral">
-        <b class="spiral">
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
-        </b>
+      <div id="jumpline">
+        <jumpline></jumpline>
       </div>
-      <h4>weixin</h4>
+      <h4>jumpline</h4>
     </li>
-
     <!--setting-->
     <li>
       <div>
@@ -37,21 +34,20 @@
       </div>
       <h4>Setting</h4>
     </li>
-
-
+    <!--wifi-->
     <li>
       <div>
         <wifi></wifi>
       </div>
       <h4>Wifi</h4>
     </li>
+    <!--shock-->
     <li>
       <div id="shock">
         <shock></shock>
       </div>
       <h4>Shock</h4>
     </li>
-
     <!--photo-->
     <li>
       <div>
@@ -59,37 +55,34 @@
       </div>
       <h4>Photo</h4>
     </li>
-
-
+    <!--delete-->
     <li>
       <div>
         <dele></dele>
       </div>
       <h4>Delete</h4>
     </li>
-
-
+    <!--ripples-->
     <li>
       <div>
         <ripple></ripple>
       </div>
       <h4>Ripples</h4>
     </li>
-
-
+    <!--refresh-->
     <li>
       <div>
         <refresh></refresh>
       </div>
       <h4>Refresh</h4>
     </li>
+
     <li>
       <div id="time">
         <b class="time"></b>
       </div>
       <h4>Time</h4>
     </li>
-
     <!--help-->
     <li>
       <div>
@@ -113,6 +106,7 @@
   import ripple from "acticon/ripple.vue"
   import dele from "acticon/delete.vue"
   import refresh from "acticon/refresh.vue"
+  import jumpline from "acticon/jumpline.vue"
 
   export default{
     data() {
@@ -128,7 +122,8 @@
       shock,
       ripple,
       dele,
-      refresh
+      refresh,
+      jumpline
     }
   }
 

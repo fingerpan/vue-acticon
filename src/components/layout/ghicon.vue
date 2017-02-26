@@ -25,7 +25,6 @@
 
 
 
-
     .github{
       display: inline-block;
       margin-left: 5px;
@@ -47,11 +46,11 @@
         display: inline-block;
         width: 14px;
         height: 14px;
-        margin-right: 4px;
         background-image: url(../../../static/img/timg.png);
         background-size: 100% 100%;
         background-repeat: no-repeat;
       }
+
       .star{
         display: inline-block;
         color: #333;
@@ -62,7 +61,6 @@
         line-height: 14px;
         vertical-align: top;
       }
-
     }
     .github:hover{
       background-image:  linear-gradient(to bottom,#eee 0,#ddd 100%);;
