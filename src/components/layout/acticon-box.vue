@@ -76,12 +76,12 @@
       </div>
       <h4>Refresh</h4>
     </li>
-
+    <!--weixin-->
     <li>
       <div id="time">
-        <b class="time"></b>
+       <weixin></weixin>
       </div>
-      <h4>Time</h4>
+      <h4>weixin</h4>
     </li>
     <!--help-->
     <li>
@@ -107,6 +107,7 @@
   import dele from "acticon/delete.vue"
   import refresh from "acticon/refresh.vue"
   import jumpline from "acticon/jumpline.vue"
+  import weixin from "acticon/weixin.vue"
 
   export default{
     data() {
@@ -123,7 +124,8 @@
       ripple,
       dele,
       refresh,
-      jumpline
+      jumpline,
+      weixin
     }
   }
 

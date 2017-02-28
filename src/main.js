@@ -9,8 +9,6 @@ import "common/less/base.less";
 /* eslint-disable no-new */
 
 
-
-
 new Vue({
   el: '#app',
   router,
