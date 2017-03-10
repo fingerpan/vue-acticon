@@ -5,41 +5,42 @@
 
   <ul class="clearfix layout">
 
-    <!--misicline-->
+    <!--misicLine-->
     <li>
       <div id="music">
-        <musicline></musicline>
+        <music-line :size="size" :color="color"></music-line>
       </div>
-      <h4>musicline</h4>
+      <h4>music-line</h4>
     </li>
-    <!--loadline-->
+
+    <!--scaling-line-->
     <li>
       <div id="loading">
-        <loadline></loadline>
+        <scaling-line :size="size" :color="color"></scaling-line>
       </div>
-      <h4>Loading</h4>
+      <h4>scaling-line</h4>
     </li>
     <!--jumpline-->
     <li>
-      <div id="jumpline">
-        <jumpline></jumpline>
+      <div id="jump-line">
+        <wave-line></wave-line>
       </div>
-      <h4>jumpline</h4>
+      <h4>wave-line</h4>
     </li>
-    <!--setting-->
+    <!--icon-set-->
     <li>
       <div>
-        <setting></setting>
+        <icon-set :size="size" :color="color"></icon-set>
         </b>
       </div>
-      <h4>Setting</h4>
+      <h4>icon-set</h4>
     </li>
-    <!--wifi-->
+    <!--icon-wifi-->
     <li>
       <div>
-        <wifi></wifi>
+        <icon-wifi :size="size" :color="color"></icon-wifi>
       </div>
-      <h4>Wifi</h4>
+      <h4>icon-wifi</h4>
     </li>
     <!--shock-->
     <li>
@@ -51,9 +52,9 @@
     <!--photo-->
     <li>
       <div>
-        <photo></photo>
+        <icon-photo></icon-photo>
       </div>
-      <h4>Photo</h4>
+      <h4>icon-photo</h4>
     </li>
     <!--delete-->
     <li>
@@ -62,33 +63,48 @@
       </div>
       <h4>Delete</h4>
     </li>
-    <!--ripples-->
-    <li>
-      <div>
-        <ripple></ripple>
-      </div>
-      <h4>Ripples</h4>
-    </li>
+
     <!--refresh-->
     <li>
       <div>
-        <refresh></refresh>
+        <refresh-round></refresh-round>
       </div>
-      <h4>Refresh</h4>
+      <h4>refresh-round</h4>
     </li>
     <!--weixin-->
     <li>
-      <div id="time">
-       <weixin></weixin>
+      <div>
+        <icon-weixin :size="size" :color="color"></icon-weixin>
       </div>
-      <h4>weixin</h4>
+      <h4>icon-weixin</h4>
     </li>
-    <!--help-->
+
     <li>
       <div>
-       <help></help>
+        <drop-round :size="size"></drop-round>
       </div>
-      <h4>Help</h4>
+      <h4>drop-round</h4>
+    </li>
+    <!--help-round -->
+    <li>
+      <div>
+        <help-round :size="size"></help-round>
+      </div>
+      <h4>help-round</h4>
+    </li>
+    <!--ripples-->
+    <li>
+      <div>
+        <ripple-round></ripple-round>
+      </div>
+      <h4>Ripple-round</h4>
+    </li>
+
+    <li>
+      <div>
+        <double-round></double-round>
+      </div>
+      <h4>double-round</h4>
     </li>
   </ul>
 
@@ -96,42 +112,49 @@
 
 <script>
 
-  import musicline from "acticon/musicline.vue"
-  import loadline  from "acticon/loadline.vue"
-  import photo from "acticon/photo.vue"
-  import help from "acticon/help.vue"
-  import setting from "acticon/setting.vue"
-  import wifi from "acticon/wifi.vue"
+  import musicLine from "acticon/music-line.vue"
+  import scalingLine  from "acticon/scaling-line.vue"
+  import iconPhoto from "acticon/icon-photo.vue"
+  import iconSet from "acticon/icon-set.vue"
+  import iconWifi from "acticon/icon-wifi.vue"
   import shock from "acticon/shock.vue"
-  import ripple from "acticon/ripple.vue"
   import dele from "acticon/delete.vue"
-  import refresh from "acticon/refresh.vue"
-  import jumpline from "acticon/jumpline.vue"
-  import weixin from "acticon/weixin.vue"
+  import refreshRound from "acticon/refresh-round.vue"
+  import waveLine from "acticon/wave-line.vue"
+  import iconWeixin from "acticon/icon-weixin.vue"
+  import dropRound from "acticon/drop-round.vue"
+  import rippleRound from "acticon/ripple-round.vue"
+  import helpRound from "acticon/help-round.vue"
+  import doubleRound from "acticon/double-round"
 
   export default{
     data() {
-      return {}
+      return {
+        size: 30,
+        color: "#999"
+      }
     },
     components: {
-      musicline,
-      loadline,
-      photo,
-      help,
-      setting,
-      wifi,
+      musicLine,
+      scalingLine,
+      iconPhoto,
+      iconSet,
+      iconWifi,
       shock,
-      ripple,
+      rippleRound,
       dele,
-      refresh,
-      jumpline,
-      weixin
+      refreshRound,
+      waveLine,
+      iconWeixin,
+      dropRound,
+      helpRound,
+      doubleRound
     }
   }
 
 
 </script>
-<style lang="less" rel="stylesheet/less">
+<style lang="less" rel="stylesheet/less" scroed>
 
   .layout {
     list-style: none;

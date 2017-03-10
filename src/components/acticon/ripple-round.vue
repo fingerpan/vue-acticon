@@ -3,50 +3,49 @@
 */
 <template>
 
-  <b class="ripples">
-    <i></i>
-    <i></i>
-    <i></i>
+  <b class="acticon-ripple-round" :style="{
+       width: iconSize,
+       height: iconSize
+    }">
+    <i v-for="n in 3" :style="{ backgroundColor: iconColor }"></i>
   </b>
-
 
 </template>
 
 <script>
 
+  import common from './common.vue';
   export default{
-    data() {
-      return {}
-    },
+    name: "ripple-round",
+    mixins: [common]
   }
 
 
 </script>
-<style lang="less" rel="stylesheet/less">
-
+<style lang="less" rel="stylesheet/less" scroed>
 
   @import "../../common/less/mixins";
-  @import "../../common/less/compatiable";
 
-  b.ripples {
+  b.acticon-ripple-round {
 
+    &:extend(.setB);
     position: relative;
 
     > i {
 
+      &:extend(.setI);
       .setWH(100%);
       .circle();
-      .iconbg();
       position: absolute;
       opacity: 0;
-      .animation(ripples 1.5s linear infinite);
+      animation: ripple-round-animate 1.5s linear infinite;
 
-      //  setchild mixins  -------------
+      //  set child loops mixins  -------------
       .setchild(@n,@i:1) when (@i <= @n) {
-        @s: 0.2*(@i - 1);
+        @s: 0.3*(@i - 1);
 
         &:nth-child(@{i}) {
-          .animateDelay(@s);
+          animation-delay: unit(@s,s);
         }
         .setchild(@n, @i+1)
       }
@@ -57,9 +56,9 @@
     }
   }
 
-  //  animate line
+  //  the  animation timing function
 
-  @keyframes ripples {
+  @keyframes ripple-round-animate {
     0% {
       transform: scale(0);
       opacity: 0;
@@ -73,21 +72,5 @@
       opacity: 0;
     }
   }
-
-  @-webkit-keyframes ripples {
-    0% {
-      transform: scale(0);
-      opacity: 0;
-    }
-    50% {
-      transform: scale(0.3);
-      opacity: 1;
-    }
-    100% {
-      transform: scale(1);
-      opacity: 0;
-    }
-  }
-
 
 </style>

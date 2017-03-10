@@ -2,11 +2,10 @@
 * Created by youngpan on 2017/2/25.
 */
 <template>
-  <b class="delete">
+  <b class="acticon-delete">
     <i></i>
     <i></i>
   </b>
-
 </template>
 
 <script>
@@ -26,11 +25,8 @@
     @import "../../common/less/mixins";
     @import "../../common/less/compatiable";
 
-    /*
 
-     */
-
-    b.delete{
+    b.acticon-delete{
 
 
       >i {
@@ -39,10 +35,9 @@
         &:nth-child(1){
 
           margin: 5px auto 1px;
-
           .setWH(80%,2px);
-          .animation(updown 3s ease infinite);
-          .transformOrigin(-10px center)
+          animation: updown 3s ease infinite;
+          transform-origin: -10px center;
 
         }
         &:nth-child(1)::before{
@@ -54,7 +49,6 @@
           position: absolute;
           top: -5px;
           .transform(translate(-50%))
-
         }
 
         &:nth-child(2){

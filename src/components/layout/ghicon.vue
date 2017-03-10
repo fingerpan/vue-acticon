@@ -46,9 +46,9 @@
         display: inline-block;
         width: 14px;
         height: 14px;
-        background-image: url(../../../static/img/timg.png);
-        background-size: 100% 100%;
         background-repeat: no-repeat;
+        background-image: data-uri('../../../static/img/timg.png');
+        background-size: 100% 100%;
       }
 
       .star{

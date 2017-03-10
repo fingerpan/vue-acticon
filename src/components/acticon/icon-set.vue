@@ -3,88 +3,73 @@
 */
 <template>
 
-  <b class="setting">
+  <b class="acticon-icon-set" :style="{
+        borderColor: iconColor,
+        width: iconSize,
+        height: iconSize
+    }">
     <b>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
+      <i v-for="n in 8" :style="{ backgroundColor: iconColor }"></i>
     </b>
   </b>
 
-
 </template>
-
 <script>
 
+  import common from "./common.vue"
   export default{
-    data() {
-      return {}
-    },
+    name:"icon-set",
+    mixins:[common]
   }
 
-
 </script>
-<style lang="less" rel="stylesheet/less">
+<style lang="less" rel="stylesheet/less" scored>
 
 
   @import "../../common/less/mixins";
-  @import "../../common/less/compatiable";
 
-  b.setting {
+  b.acticon-icon-set {
     position: relative;
     display: flex;
     justify-content: center;
 
-    &::before,
-    &::after {
+    &::before {
       content: "";
       border-radius: 50%;
       .setcenter;
-    }
-
-    &::before {
       .setWH(75%);
-      .iconbg;
-    }
-
-    &::after {
-      .setWH(40%);
+      box-sizing: border-box;
+      border: 5px solid #999999;
+      border-color: inherit;
+      z-index: 2;
       background-color: #fff;
     }
 
     > b {
       position: relative;
       .setWH(20%, 100%);
-      .animation(rotating 4s infinite linear);
+      animation: icon-set-animate 4s infinite linear;
 
-      i {
+      > i {
         position: absolute;
         .setWH(100%);
-        .transformOrigin(center center);
+        transform-origin:center ;
         border-radius: 2px;
-        .iconbg;
 
-        // set child element i
+        // set child loops mixins;
         .setchild(@n,@i:0) when (@i < @n) {
           &:nth-child(@{i}) {
-            .transform(rotate(@i*45deg));
+            transform: rotate(@i*45deg);
           }
           .setchild(@n, @i+1)
         }
-
         // bulid
         .setchild(4);
       }
-
     }
   }
 
-  @keyframes rotating {
+  @keyframes icon-set-animate {
     0% {
       transform: rotate(0deg);
     }
@@ -92,14 +77,5 @@
       transform: rotate(360deg);
     }
   }
-  @-webkit-keyframes rotating {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
 
 </style>

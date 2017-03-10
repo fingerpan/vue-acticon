@@ -2,56 +2,48 @@
 * Created by youngpan on 2017/2/28.
 */
 <template>
-  <b class="weixin">
+
+  <b class="acticon-icon-weixin" :style="{
+        width: iconSize,
+        height: iconSize,
+        borderColor : iconColor
+    }">
     <b>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
-      <i></i>
+      <i v-for="n in 8"></i>
     </b>
-
   </b>
-
 
 </template>
 
 <script>
 
+  import common from "./common.vue"
   export default{
-    data() {
-      return {}
-    },
+    name: "icon-weixin",
+    mixins: [common]
   }
 
 
 </script>
-<style lang="less" rel="stylesheet/less">
+<style lang="less" rel="stylesheet/less" scored>
 
 
   @import "../../common/less/mixins";
-  @import "../../common/less/compatiable";
-  @import "../../common/less/var";
 
-  b.weixin {
+  b.acticon-icon-weixin {
     box-sizing: border-box;
-    border: 8px solid @iconColor;
+    border: 8px solid;
     border-radius: 50%;
     position: relative;
-    animation:weixin 4s infinite linear;
+    animation: icon-weixin-animate 4s infinite linear;
 
     > b {
-      width: 2px;
-      height: 17px;
+      .setWH(2px,18px);
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, 0);
       transform-origin: center center;
-
       i {
         .setWH(100%);
         position: absolute;
@@ -63,7 +55,7 @@
           @deg: unit(45*@i, deg);
 
           &:nth-child(@{i}) {
-            .transform(rotate(@deg) translate(-6px, -3px))
+            transform: rotate(@deg) translate(-6px, -3px);
           }
           .setChild(@n, @i+1);
         }
@@ -72,13 +64,12 @@
     }
   }
 
-
-  @keyframes weixin {
-    0%{
-      .transform(rotate(0deg));
+  @keyframes icon-weixin-animate {
+    0% {
+      transform: rotate(0deg);
     }
-    100%{
-      .transform(rotate(360deg));
+    100% {
+      transform: rotate(360deg);
     }
   }
 
