@@ -10,7 +10,6 @@
       <div id="music">
         <music-line :size="size" :color="color"></music-line>
       </div>
-      <h4>music-line</h4>
     </li>
 
     <!--scaling-line-->
@@ -18,14 +17,12 @@
       <div id="loading">
         <scaling-line :size="size" :color="color"></scaling-line>
       </div>
-      <h4>scaling-line</h4>
     </li>
     <!--jumpline-->
     <li>
       <div id="jump-line">
         <wave-line></wave-line>
       </div>
-      <h4>wave-line</h4>
     </li>
     <!--icon-set-->
     <li>
@@ -33,78 +30,73 @@
         <icon-set :size="size" :color="color"></icon-set>
         </b>
       </div>
-      <h4>icon-set</h4>
     </li>
     <!--icon-wifi-->
     <li>
       <div>
         <icon-wifi :size="size" :color="color"></icon-wifi>
       </div>
-      <h4>icon-wifi</h4>
     </li>
     <!--shock-->
     <li>
       <div id="shock">
         <shock></shock>
       </div>
-      <h4>Shock</h4>
     </li>
     <!--photo-->
     <li>
       <div>
         <icon-photo></icon-photo>
       </div>
-      <h4>icon-photo</h4>
     </li>
     <!--delete-->
     <li>
       <div>
         <dele></dele>
       </div>
-      <h4>Delete</h4>
     </li>
+    <li>
+      <div>
+        <dele></dele>
+      </div>
+    </li>
+
 
     <!--refresh-->
     <li>
       <div>
         <refresh-round></refresh-round>
       </div>
-      <h4>refresh-round</h4>
     </li>
     <!--weixin-->
     <li>
       <div>
         <icon-weixin :size="size" :color="color"></icon-weixin>
       </div>
-      <h4>icon-weixin</h4>
     </li>
 
     <li>
       <div>
         <drop-round :size="size"></drop-round>
       </div>
-      <h4>drop-round</h4>
     </li>
     <!--help-round -->
     <li>
       <div>
         <help-round :size="size"></help-round>
       </div>
-      <h4>help-round</h4>
     </li>
     <!--ripples-->
     <li>
       <div>
         <ripple-round></ripple-round>
       </div>
-      <h4>Ripple-round</h4>
     </li>
 
     <li>
       <div>
         <double-round></double-round>
       </div>
-      <h4>double-round</h4>
     </li>
   </ul>
 
@@ -156,7 +148,7 @@
 </script>
 <style lang="less" rel="stylesheet/less" scroed>
 
-  .layout {
+  ul.layout {
     list-style: none;
     width: 750px;
     margin: 10px auto 0;
@@ -174,12 +166,13 @@
       border: 1px solid #CCCCCC;
       text-align: center;
       box-sizing: border-box;
+      display: flex;
       > div {
         display: flex;
         width: 40px;
         height: 40px;
         border: 1px solid transparent;
-        margin: 25% auto 0;
+        margin: auto;
         justify-content: center;
         align-items: center;
       }
@@ -188,26 +181,22 @@
         cursor: pointer;
       }
 
-      > h4 {
-        font-size: 14px;
-        font-weight: 400;
-        color: #666666;
-        line-height: 150%;
-        margin-top: 5%;
-      }
     }
   }
 
   @media screen and (max-width: 740px) {
-    .layout {
+    ul.layout {
       width: 100%;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
     }
 
-    .layout > li {
-      width: 25%;
-      height: 30%;
+    ul.layout > li {
+      width: 80px;
+      height: 80px;
     }
   }
 
