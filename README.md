@@ -2,56 +2,103 @@
 
 > an vue.js move icon  
 
-## Build Setup
 
-``` bash
+## Installation
+
+``` shell
 npm install vue-acticon --save
 ```
+## Usage
 
-## example:
+Import the Acticon components whice you need 
+
+```js
+ import  { musicLine }  from  "vue-acticon"; 
+
+   or:
+    
+ import {musicLine as "your name" } from "vue-acticon";
+   
+```
+also you can chose a single file:
+```js
+
+import "your name" from "vue-acticon/dist/**.vue"  
 
 ```
+example:
+
+```html js
 
 <template>
     <div>
-        <music-round></music-round>
+        <music-line :size="size" :color="color" ></music-line>
     </div>
 </templage>
 
 <script>
   ...
-  import { musicRound } from "vue-acticon"
+  import { musicLine } from "vue-acticon"
   ...
   
   export default{
-      data() {},
+      data() {
+          return {
+            size:"30",
+            color:"#ccc"
+          }
+      },
       components:{
-        musicRound
+        musicLine
       }
   }
   
 </script>
 
 ```
-## also you can 
-
-```js
-  
-
-```
-
 
 ## the porps
 
-> size
+####  size  
 
- - type : [Number,String]
- - defaule : 30
+>——设置acticon图标大小
+  
+ >> - type : [Number,String]
+ >> - defaule : 30
  
-> color
-
-- type : String
-- defaule : `#999`
+ **attention**
+ - 图标为正方型。
+ - 图标尺寸单位支持使用rem,px,%,em; 如果没有单位，则默认为px;
+ - 建议使用数字。单位默认为px
  
+#### color  
+>——设置acticon图标颜色
+ 
+ >> - type : String
+ >> - defaule : $parent.color  || parentNode.style.color || "#999"
+ 
+ **attention**
+ - 颜色可以是6位十六进制颜色、rgba、颜色,
+ - 默认颜色:
+    + 1.寻找父组件data中color属性值。
+    + 2.寻找父节点的color样式属性值。
+    + 3.如果父节点的color样式属性值为黑色，则使用"#999"。
 
+ 
+## the icon list 
+  - music-line
+  - wave-line
+  - scaling-line
+  - icon-set
+  - icon-shock
+  - icon-wifi
+  - icon-photo
+  - icon-weixin
+  - refresh-round
+  - drop-round
+  - help-round
+  - ripple-round
+  - double-round
+  
+  
 

@@ -31,6 +31,7 @@
   @import "../../common/less/mixins";
 
   b.acticon-icon-weixin {
+    &:extend(.setB);
     box-sizing: border-box;
     border: 8px solid;
     border-radius: 50%;
@@ -38,6 +39,7 @@
     animation: icon-weixin-animate 4s infinite linear;
 
     > b {
+      &:extend(.setB);
       .setWH(2px,18px);
       position: absolute;
       top: 50%;
@@ -45,6 +47,7 @@
       transform: translate(-50%, 0);
       transform-origin: center center;
       i {
+        &:extend(.setI);
         .setWH(100%);
         position: absolute;
         transform-origin: top center;

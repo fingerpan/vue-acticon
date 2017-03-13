@@ -1,6 +1,6 @@
 {
   "name": "vue-acticon",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A vue.js move icon ",
   "author": "youngpan",
   "scripts": {
@@ -26,8 +26,9 @@
   "bugs": {
     "url": "https://github.com/fingerpan/acticon/issues"
   },
-  "homepage": "https://github.com/fingerpan/acticon#readme",
+  "homepage": "http://www.acticon.com",
   "dependencies": {
+    "iview": "^2.0.0-rc.2",
     "vue": "^2.1.10",
     "vue-router": "^2.2.0"
   },

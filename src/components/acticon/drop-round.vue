@@ -25,7 +25,7 @@
     computed: {
       setOrigin() {
         // 只解决带有px 的 或者数字。
-        var origin = window.parseInt(this.size) / 2 + 'px';
+        var origin = window.parseInt(this.iconSize) / 2 + 'px';
         return 'center ' + origin;
       }
     },
@@ -42,6 +42,7 @@
 
   b.acticon-drop-round {
     position: relative;
+    &:extend(.setB);
     &::before {
       position: absolute;
       top: 0;
@@ -60,7 +61,7 @@
       position: absolute;
       left: 50%;
       margin-left: -2px;
-      animation: drop-round-animate 2s infinite ease;
+      animation: drop-round-animate 4s infinite cubic-bezier(.57,.21,.39,.71);
 
       .setChild(@n,@i:1) when (@i <= @n) {
         &:nth-child(@{i}) {
@@ -74,23 +75,12 @@
     }
   }
 
-  @-webkit-keyframes drop-round-animate {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(360deg);
-    }
-  }
-
   @keyframes drop-round-animate {
     0% {
       transform: rotate(0deg);
     }
     100% {
-      transform: rotate(360deg);
+      transform: rotate(720deg);
     }
   }
-
-
 </style>

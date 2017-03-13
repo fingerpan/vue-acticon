@@ -4,20 +4,21 @@
 <template>
 
   <b class="acticon-icon-photo" :style="{
-
-      borderColor : iconColor
+      borderColor : iconColor,
+      width:iconSize,
+      height:iconSize
     }">
-    <b class="photo-box">
+    <b class="icon-photo-box">
       <i v-for="n in 4" :style="{ backgroundColor : iconColor}"></i>
     </b>
   </b>
-
 
 </template>
 
 <script>
 
-  import common from "./common.vue"
+  import common from "./common.vue";
+
   export default{
     name: "icon-photo",
     mixins: [common]
@@ -31,6 +32,7 @@
   @import "../../common/less/mixins";
 
   b.acticon-icon-photo {
+    &:extend(.setB);
     position: relative;
     box-sizing: border-box;
     overflow: hidden;
@@ -53,8 +55,8 @@
       //background-image: radial-gradient(at 50% 50%, transparent 0%, transparent 50%, @iconcolor 50%, @iconcolor 100%);
 
     }
-    b.photo-box {
-
+    b.icon-photo-box {
+      &:extend(.setB);
       .setWH(200%);
       position: absolute;
       top: 35%;
@@ -63,6 +65,7 @@
 
       //   i  --------------
       i {
+        &:extend(.setI);
         position: absolute;
         border-radius: 10%;
 

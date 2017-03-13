@@ -29,6 +29,7 @@
   @import "../../common/less/mixins";
 
   b.acticon-icon-set {
+    &:extend(.setB);
     position: relative;
     display: flex;
     justify-content: center;
@@ -46,11 +47,13 @@
     }
 
     > b {
+      &:extend(.setB);
       position: relative;
       .setWH(20%, 100%);
       animation: icon-set-animate 4s infinite linear;
 
       > i {
+        &:extend(.setI);
         position: absolute;
         .setWH(100%);
         transform-origin:center ;

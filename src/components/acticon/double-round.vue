@@ -8,18 +8,18 @@
     }">
     <i v-for="n in 2" :style="{ backgroundColor: iconColor }"></i>
   </b>
-
 </template>
 
 <script>
 
   import common  from "./common.vue"
   export default{
-    name: 'double-bound',
+    name: 'double-round',
     mixins: [common]
   }
 
 </script>
+
 <style lang="less" rel="stylesheet/less" scroed>
 
   @import "../../common/less/mixins";

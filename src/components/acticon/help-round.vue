@@ -31,6 +31,7 @@
     position: relative;
     &:extend(.setB);
 
+
     &::before,&::after {
       display: block;
       content: "";
@@ -38,6 +39,7 @@
       box-sizing: border-box;
       .setWH(80%);
       .circle();
+      .setcenter()
     }
     &::before {
       background-color: #eee;
@@ -55,25 +57,25 @@
 
   @keyframes help-before-animate {
     0% {
-      transform: scale(1.5);
+      transform: translate(-50%,-50%) scale(1.5);
     }
     65% {
-      transform: scale(1.3);
+      transform:translate(-50%,-50%)  scale(1.3);
     }
     100% {
-      transform: scale(1.5);
+      transform:translate(-50%,-50%)  scale(1.5);
     }
   }
 
   @keyframes help-after-animate {
     0% {
-      transform: scale(1);
+      transform:translate(-50%,-50%)  scale(1);
     }
     65% {
-      transform: scale(1.2);
+      transform:translate(-50%,-50%)  scale(1.2);
     }
     100% {
-      transform: scale(1);
+      transform:translate(-50%,-50%)  scale(1);
     }
   }
 
