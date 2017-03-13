@@ -28,7 +28,7 @@ import "your name" from "vue-acticon/dist/**.vue"
 ```
 example:
 
-```html js
+```html
 
 <template>
     <div>

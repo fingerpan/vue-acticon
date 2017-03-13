@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ff944730-1a9d-4af1-aee7-859f75d7591b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/common/css/reset.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/acticon/icon-shock.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/acticon/index.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/layout/acticon-detail.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/layout/acticon_decs.vue" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/components/layout/iconli.vue" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/components/acticon/shock.vue" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/common/less/base.less" afterPath="$PROJECT_DIR$/src/common/less/base.less" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/acticon/common.vue" afterPath="$PROJECT_DIR$/src/components/acticon/common.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/acticon/double-round.vue" afterPath="$PROJECT_DIR$/src/components/acticon/double-round.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/acticon/drop-round.vue" afterPath="$PROJECT_DIR$/src/components/acticon/drop-round.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/acticon/help-round.vue" afterPath="$PROJECT_DIR$/src/components/acticon/help-round.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/acticon/icon-photo.vue" afterPath="$PROJECT_DIR$/src/components/acticon/icon-photo.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/acticon/icon-set.vue" afterPath="$PROJECT_DIR$/src/components/acticon/icon-set.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/acticon/icon-weixin.vue" afterPath="$PROJECT_DIR$/src/components/acticon/icon-weixin.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layout/acticon-box.vue" afterPath="$PROJECT_DIR$/src/components/layout/acticon-box.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/components/layout/head.vue" afterPath="$PROJECT_DIR$/src/components/layout/head.vue" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.js" afterPath="$PROJECT_DIR$/src/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/router/index.js" afterPath="$PROJECT_DIR$/src/router/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -43,7 +22,29 @@
     <favorites_list name="vue-acticon-master" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="235">
+                <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+                <folding>
+                  <marker date="1489389638059" expanded="true" signature="441:787" ph="..." />
+                  <marker date="1489389638059" expanded="true" signature="451:525" ph="..." />
+                  <marker date="1489389638059" expanded="true" signature="547:787" ph="..." />
+                  <marker date="1489389638059" expanded="true" signature="622:775" ph="{...}" />
+                  <marker date="1489389638059" expanded="true" signature="637:725" ph="{...}" />
+                  <marker date="1489389638059" expanded="true" signature="656:717" ph="{&quot;size&quot;: &quot;30&quot;...}" />
+                  <marker date="1489389638059" expanded="true" signature="744:771" ph="{&quot;musicRound&quot;: musicRound...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -110,8 +111,8 @@
         <option value="$PROJECT_DIR$/src/components/acticon/drop-round.vue" />
         <option value="$PROJECT_DIR$/src/components/layout/acticon-box.vue" />
         <option value="$PROJECT_DIR$/src/components/acticon/common.vue" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/components/acticon/double-round.vue" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -304,12 +305,12 @@
       <workItem from="1489166035746" duration="1006000" />
       <workItem from="1489237508563" duration="7221000" />
       <workItem from="1489297971806" duration="33026000" />
-      <workItem from="1489385256285" duration="4116000" />
+      <workItem from="1489385256285" duration="4297000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="118861000" />
+    <option name="totallyTimeSpent" value="119042000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -321,10 +322,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1376" height="754" extended-state="7" />
-    <editor active="false" />
+    <frame x="-8" y="-8" width="1376" height="754" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19011976" sideWeight="0.49317408" order="3" side_tool="false" content_ui="combo" x="552" y="76" width="255" height="586" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19011976" sideWeight="0.49317408" order="3" side_tool="false" content_ui="combo" x="552" y="76" width="255" height="586" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -736,23 +737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="487">
-            <caret line="104" column="0" lean-forward="true" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
-            <folding>
-              <marker date="1489389388102" expanded="true" signature="444:790" ph="..." />
-              <marker date="1489389388102" expanded="true" signature="454:528" ph="..." />
-              <marker date="1489389388102" expanded="true" signature="550:790" ph="..." />
-              <marker date="1489389388102" expanded="true" signature="625:778" ph="{...}" />
-              <marker date="1489389388102" expanded="true" signature="747:774" ph="{&quot;musicRound&quot;: musicRound...}" />
-            </folding>
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/acticon/double-round.vue">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="273">
@@ -761,6 +745,25 @@
             <element signature="n#script#0;n#!!top" expanded="false" />
             <element signature="n#style#0;n#!!top" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="235">
+            <caret line="45" column="18" lean-forward="true" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+            <folding>
+              <marker date="1489389638059" expanded="true" signature="441:787" ph="..." />
+              <marker date="1489389638059" expanded="true" signature="451:525" ph="..." />
+              <marker date="1489389638059" expanded="true" signature="547:787" ph="..." />
+              <marker date="1489389638059" expanded="true" signature="622:775" ph="{...}" />
+              <marker date="1489389638059" expanded="true" signature="637:725" ph="{...}" />
+              <marker date="1489389638059" expanded="true" signature="656:717" ph="{&quot;size&quot;: &quot;30&quot;...}" />
+              <marker date="1489389638059" expanded="true" signature="744:771" ph="{&quot;musicRound&quot;: musicRound...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
