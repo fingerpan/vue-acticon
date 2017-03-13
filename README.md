@@ -59,7 +59,7 @@ example:
 
 ## the porps
 
-####  size  
+###  size  
 
 >——设置acticon图标大小
   
@@ -71,7 +71,7 @@ example:
  - 图标尺寸单位支持使用rem,px,%,em; 如果没有单位，则默认为px;
  - 建议使用数字。单位默认为px
  
-#### color  
+### color  
 >——设置acticon图标颜色
  
  >> - type : String
