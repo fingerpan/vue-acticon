@@ -1,0 +1,24 @@
+body {
+  font-family: "Microsoft YaHei UI Light";
+}
+.wrap {
+  width: 980px;
+  margin: 0 auto;
+}
+.layoutWrap {
+  width: 750px;
+}
+@media screen and (max-width: 980px) {
+  .wrap {
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+html {
+  font-size: 30px;
+}
+@media screen and (max-width: 750px) {
+  .wrap {
+    width: 100%;
+  }
+}

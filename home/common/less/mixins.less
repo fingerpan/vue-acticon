@@ -1,0 +1,62 @@
+@import "var";
+
+//   base minxins  ---------------------------------------------
+
+.setWH(@w,@h:@w) {
+  width: @w;
+  height: @h;
+}
+
+.borderRadius(@rule) {
+  border-radius: @rule;
+}
+
+.circle() {
+  border-radius: 50%;
+}
+
+// the flex
+.flex-around-end {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//  center
+.setcenter(@top:50%,@left:50%) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+//   ---------------
+
+//   icon base color
+@iconColor: @grey-dark;
+
+.iconbg {
+  background-color: @iconColor;
+}
+
+.iconbd {
+  border-color: @iconColor;
+}
+
+.setB {
+  display: inline-block;
+  font-style: normal;
+}
+
+.setI {
+  display: block;
+  font-style: normal;
+}
+
+

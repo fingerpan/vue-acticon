@@ -1,0 +1,31 @@
+
+
+
+
+// 设置兼容性 -----------------------------------
+.transform(@rule){
+  -webkit-transform: @rule;
+  -moz-transform: @rule;
+  -ms-transform: @rule;
+  -o-transform: @rule;
+  transform: @rule;
+}
+
+.animateDelay(@s){
+  -moz-animation-delay: unit(@s,s);
+  -o-animation-delay: unit(@s,s);
+  animation-delay: unit(@s,s);
+}
+.animation(@rule){
+  -webkit-animation: @rule;
+  -o-animation: @rule;
+  animation: @rule;
+}
+
+.transformOrigin(@rule){
+  -webkit-transform-origin: @rule;
+  -moz-transform-origin: @rule;
+  -ms-transform-origin: @rule;
+  -o-transform-origin: @rule;
+  transform-origin: @rule;
+}
